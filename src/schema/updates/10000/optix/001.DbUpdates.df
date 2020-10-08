@@ -1,0 +1,69 @@
+ADD TABLE "DbUpdates"
+  DESCRIPTION "Logs DB updates."
+  AREA "Schema Area"
+  DUMP-NAME "dbupdates"
+  
+ADD FIELD "DbVersionUpdate" OF "DbUpdates" AS integer 
+  DESCRIPTION "DB version number"
+  FORMAT "99999"
+  INITIAL "0"
+  LABEL "DB Version"
+  MAX-WIDTH 6
+  COLUMN-LABEL "Version"
+  
+ADD FIELD "DbVersionStep" OF "DbUpdates" AS integer 
+  DESCRIPTION "DB update step"
+  FORMAT "999"
+  INITIAL "0"
+  LABEL "Update step"
+  MAX-WIDTH 6
+  COLUMN-LABEL "Step"
+  
+ADD FIELD "TargetDbNames" OF "DbUpdates" AS character 
+  DESCRIPTION "Target DB names"
+  FORMAT "x(15)"
+  INITIAL ""
+  LABEL "DB Name"
+  MAX-WIDTH 20
+  
+ADD FIELD "UpdateType" OF "DbUpdates" AS character 
+  DESCRIPTION "Update type"
+  FORMAT "x(20)"
+  INITIAL ""
+  LABEL "DB Name"
+  MAX-WIDTH 40
+
+ADD FIELD "StartDate" OF "DbUpdates" AS datetime-tz 
+  DESCRIPTION "When update step was started"
+  FORMAT "99/99/9999 hh:mm:ss.sss+hh:mm"
+  INITIAL ?
+  MAX-WIDTH 12
+  
+ADD FIELD "EndDate" OF "DbUpdates" AS datetime-tz 
+  DESCRIPTION "When update step was finished"
+  FORMAT "99/99/9999 hh:mm:ss.sss+hh:mm"
+  INITIAL ?
+  MAX-WIDTH 12
+  
+ADD FIELD "LogOutput" OF "DbUpdates" AS CLOB 
+  DESCRIPTION "Log output of update step"
+  FORMAT "x(30)"
+  INITIAL ""
+  LABEL "Output logs"
+  LOB-BYTES 104857600
+  LOB-SIZE 100M
+  CLOB-CODEPAGE "UTF-8"
+  CLOB-COLLATION "basic"
+  CLOB-TYPE 2
+
+ADD FIELD "ReturnCode" OF "DbUpdates" AS integer 
+  DESCRIPTION "Return value of the update step."
+  FORMAT "->9"
+  MAX-WIDTH 4
+
+ADD INDEX "IdxVersionUpdate" ON "DbUpdates" 
+  UNIQUE
+  PRIMARY
+  AREA "Schema Area"
+  INDEX-FIELD "DbVersionUpdate" ASCENDING 
+  INDEX-FIELD "DbVersionStep" ASCENDING

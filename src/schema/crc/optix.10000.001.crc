@@ -1,0 +1,101 @@
+A optix.Cust_Data
+A optix.Cust_Index
+A optix.Employee
+A optix.Inventory
+A optix.Misc
+A optix.Order
+S optix.NextBinNum
+S optix.NextCustNum
+S optix.NextEmpNum
+S optix.NextInvNum
+S optix.NextInvTransNum
+S optix.NextItemNum
+S optix.NextLocalDefNum
+S optix.NextOrdNum
+S optix.NextPONum
+S optix.NextRefNum
+S optix.NextSupplNum
+S optix.NextVisitor
+S optix.NextWareNum
+T optix.Benefits 63971
+I optix.Benefits.EmpNo 44065
+T optix.BillTo 42592
+I optix.BillTo.custnumbillto 50603
+T optix.Bin 29616
+I optix.Bin.BinNum 36023
+I optix.Bin.ItemNum 28128
+I optix.Bin.WarehouseNumItemNum 61399
+T optix.Customer 30242
+I optix.Customer.Comments 55640
+I optix.Customer.CountryPost 1274
+I optix.Customer.CustNum 62896
+I optix.Customer.Name 3792
+I optix.Customer.SalesRep 50026
+T optix.DbUpdates 22947
+I optix.DbUpdates.IdxVersionUpdate 3808
+T optix.Department 16700
+I optix.Department.DeptCode 6959
+T optix.Employee 52783
+I optix.Employee.DeptCode 35710
+I optix.Employee.EmpNo 44065
+I optix.Employee.Name 11310
+T optix.Family 36221
+I optix.Family.EmpNoRelativeName 4082
+T optix.Feedback 63788
+I optix.Feedback.Comments 55640
+I optix.Feedback.Company 2983
+I optix.Feedback.Contact 20606
+I optix.Feedback.Department 11031
+I optix.Feedback.Rating 24919
+T optix.InventoryTrans 56491
+I optix.InventoryTrans.default ?
+T optix.Invoice 8106
+I optix.Invoice.CustNum 25969
+I optix.Invoice.InvoiceDate 16105
+I optix.Invoice.InvoiceNum 55363
+I optix.Invoice.OrderNum 31865
+T optix.Item 50878
+I optix.Item.CatDescription 45250
+I optix.Item.Category2ItemName 23746
+I optix.Item.CategoryItemName 43341
+I optix.Item.ItemName 6041
+I optix.Item.ItemNum 64801
+T optix.LocalDefault 19187
+I optix.LocalDefault.localdefnum 5613
+T optix.Order 33006
+I optix.Order.CustOrder 59748
+I optix.Order.OrderDate 26506
+I optix.Order.OrderNum 60456
+I optix.Order.OrderStatus 21331
+I optix.Order.SalesRep 50026
+T optix.OrderLine 64667
+I optix.OrderLine.itemnum 28128
+I optix.OrderLine.orderline 51144
+I optix.OrderLine.OrderLineStatus 12163
+T optix.POLine 17507
+I optix.POLine.PONumLinenum 39307
+T optix.PurchaseOrder 47259
+I optix.PurchaseOrder.PONum 8181
+T optix.RefCall 58935
+I optix.RefCall.CallNum 1454
+I optix.RefCall.CustNum 6727
+I optix.RefCall.Sibling 17204
+I optix.RefCall.Txt 51328
+T optix.Salesrep 19323
+I optix.Salesrep.SalesRep 21307
+T optix.ShipTo 28278
+I optix.ShipTo.custnumshipto 18754
+T optix.State 6502
+I optix.State.State 17344
+T optix.Supplier 56042
+I optix.Supplier.SupplierID 23342
+T optix.SupplierItemXref 41392
+I optix.SupplierItemXref.ItemNumSupplierID 40863
+I optix.SupplierItemXref.SupplieridItemNum 10976
+T optix.TimeSheet 37493
+I optix.TimeSheet.EmpNoDayRecorded 36620
+T optix.Vacation 45223
+I optix.Vacation.EmpNoStartDate 3641
+T optix.Warehouse 47655
+I optix.Warehouse.warehousename 495
+I optix.Warehouse.warehousenum 22946

@@ -1,0 +1,19 @@
+ADD TABLE "Tab1"
+  DESCRIPTION ""
+  AREA "Schema Area"
+  DUMP-NAME "Tab1"
+  
+ADD FIELD "Fld1" OF "Tab1" AS integer 
+  DESCRIPTION "xxxx"
+  FORMAT "99999"
+  INITIAL "0"
+  LABEL "xxxx"
+  MAX-WIDTH 6
+  COLUMN-LABEL "xxxx"
+  
+ADD INDEX "Idx1" ON "Tab1" 
+  UNIQUE
+  PRIMARY
+  INACTIVE
+  AREA "Schema Area"
+  INDEX-FIELD "Fld1" ASCENDING 

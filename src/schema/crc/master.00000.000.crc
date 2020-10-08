@@ -1,0 +1,99 @@
+A master.Cust_Data
+A master.Cust_Index
+A master.Employee
+A master.Inventory
+A master.Misc
+A master.Order
+S master.NextBinNum
+S master.NextCustNum
+S master.NextEmpNum
+S master.NextInvNum
+S master.NextInvTransNum
+S master.NextItemNum
+S master.NextLocalDefNum
+S master.NextOrdNum
+S master.NextPONum
+S master.NextRefNum
+S master.NextSupplNum
+S master.NextVisitor
+S master.NextWareNum
+T master.Benefits 63971
+I master.Benefits.EmpNo 44065
+T master.BillTo 42592
+I master.BillTo.custnumbillto 50603
+T master.Bin 29616
+I master.Bin.BinNum 36023
+I master.Bin.ItemNum 28128
+I master.Bin.WarehouseNumItemNum 61399
+T master.Customer 30242
+I master.Customer.Comments 55640
+I master.Customer.CountryPost 1274
+I master.Customer.CustNum 62896
+I master.Customer.Name 3792
+I master.Customer.SalesRep 50026
+T master.Department 16700
+I master.Department.DeptCode 6959
+T master.Employee 52783
+I master.Employee.DeptCode 35710
+I master.Employee.EmpNo 44065
+I master.Employee.Name 11310
+T master.Family 36221
+I master.Family.EmpNoRelativeName 4082
+T master.Feedback 63788
+I master.Feedback.Comments 55640
+I master.Feedback.Company 2983
+I master.Feedback.Contact 20606
+I master.Feedback.Department 11031
+I master.Feedback.Rating 24919
+T master.InventoryTrans 56491
+I master.InventoryTrans.default ?
+T master.Invoice 8106
+I master.Invoice.CustNum 25969
+I master.Invoice.InvoiceDate 16105
+I master.Invoice.InvoiceNum 55363
+I master.Invoice.OrderNum 31865
+T master.Item 50878
+I master.Item.CatDescription 45250
+I master.Item.Category2ItemName 23746
+I master.Item.CategoryItemName 43341
+I master.Item.ItemName 6041
+I master.Item.ItemNum 64801
+T master.LocalDefault 19187
+I master.LocalDefault.localdefnum 5613
+T master.Order 33006
+I master.Order.CustOrder 59748
+I master.Order.OrderDate 26506
+I master.Order.OrderNum 60456
+I master.Order.OrderStatus 21331
+I master.Order.SalesRep 50026
+T master.OrderLine 64667
+I master.OrderLine.itemnum 28128
+I master.OrderLine.orderline 51144
+I master.OrderLine.OrderLineStatus 12163
+T master.POLine 17507
+I master.POLine.PONumLinenum 39307
+T master.PurchaseOrder 47259
+I master.PurchaseOrder.PONum 8181
+T master.RefCall 58935
+I master.RefCall.CallNum 1454
+I master.RefCall.CustNum 6727
+I master.RefCall.Sibling 17204
+I master.RefCall.Txt 51328
+T master.Salesrep 19323
+I master.Salesrep.SalesRep 21307
+T master.ShipTo 28278
+I master.ShipTo.custnumshipto 18754
+T master.State 6502
+I master.State.State 17344
+T master.Supplier 56042
+I master.Supplier.SupplierID 23342
+T master.SupplierItemXref 41392
+I master.SupplierItemXref.ItemNumSupplierID 40863
+I master.SupplierItemXref.SupplieridItemNum 10976
+T master.TimeSheet 37493
+I master.TimeSheet.EmpNoDayRecorded 36620
+T master.Vacation 45223
+I master.Vacation.EmpNoStartDate 3641
+T master.Warehouse 47655
+I master.Warehouse.warehousename 495
+I master.Warehouse.warehousenum 22946
